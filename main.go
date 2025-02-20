@@ -24,7 +24,7 @@ type dataWithFloats struct {
 }
 
 func main() {
-	rand.Seed(time.Now().UnixNano())
+	rand.NewSource(time.Now().UnixNano())
 
 	x := make([]byte, 129)
 
